@@ -1,0 +1,48 @@
+.home-container {
+  text-align: center;
+  padding: 100px 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f0f0f0, #ffffff);
+  min-height: 100vh;
+}
+
+.home-container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.home-container p {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.btn-principal, .btn-secundario {
+  display: inline-block;
+  margin: 10px;
+  padding: 14px 28px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-principal {
+  background-color: #007bff;
+}
+
+.btn-principal:hover {
+  background-color: #0056b3;
+}
+
+.btn-secundario {
+  background-color: #28a745;
+}
+
+.btn-secundario:hover {
+  background-color: #1e7e34;
+}
