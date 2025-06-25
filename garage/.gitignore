@@ -8,6 +8,7 @@ dist-ssr/
 # === ENTORNOS Y CLAVES ===
 .env
 .env.local
+backend/.env
 .env.*.local
 *.key
 *.pem
