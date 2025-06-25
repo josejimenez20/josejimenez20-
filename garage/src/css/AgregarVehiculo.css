@@ -1,51 +1,77 @@
+/* Container general */
 .agregar-container {
-  padding: 40px 20px;
+  padding: 60px 20px;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background: linear-gradient(to bottom, #f0f0f0, #e9e9e9);
   min-height: 100vh;
   text-align: center;
 }
 
+/* Título */
 .agregar-container h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #333;
+  font-size: 40px;
+  margin-bottom: 28px;
+  color: #2d2d2d;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
 }
 
+/* Formulario */
 .agregar-form {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
 }
 
+/* Inputs, selects, textarea */
 .agregar-form input,
+.agregar-form select,
 .agregar-form textarea {
-  padding: 12px;
+  padding: 14px 16px;
   font-size: 16px;
-  border-radius: 6px;
+  border-radius: 10px;
   border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
+.agregar-form input:focus,
+.agregar-form select:focus,
+.agregar-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(40, 167, 69, 0.3);
+}
+
+/* Botón publicar */
 .agregar-form button {
-  padding: 12px;
+  padding: 14px;
   font-size: 18px;
-  background-color: #28a745;
+  background: linear-gradient(to right, #007bff, #007bff);
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .agregar-form button:hover {
-  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+/* Preview de imágenes */
 .preview-imagenes {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 12px;
+  margin-top: 12px;
   justify-content: center;
 }
 
@@ -53,6 +79,48 @@
   width: 100px;
   height: 100px;
   object-fit: cover;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  border-radius: 10px;
+  border: 2px solid #bbb;
+  transition: transform 0.2s ease;
+}
+
+.preview-imagenes img:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo específico para selects encadenados */
+.agregar-form select {
+  appearance: none;
+  background: #fff url("data:image/svg+xml,%3Csvg width='12' height='6' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 6 5-6H0z' fill='%23888'/%3E%3C/svg%3E") no-repeat right 14px center;
+  background-size: 10px 6px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .agregar-container h2 {
+    font-size: 28px;
+  }
+
+  .agregar-form {
+    padding: 20px;
+    border-radius: 12px;
+    gap: 14px;
+  }
+
+  .agregar-form input,
+  .agregar-form select,
+  .agregar-form textarea {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .agregar-form button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .preview-imagenes img {
+    width: 80px;
+    height: 80px;
+  }
 }
