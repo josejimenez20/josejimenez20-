@@ -31,9 +31,9 @@ function Home() {
 
       <section className="contacto-section">
         <h2>Contacto</h2>
-        <p><strong>Email:</strong> contacto@driftshop.com</p>
+        <p><strong>Email:</strong> jimenez@driftshop.com</p>
         <p><strong>Teléfono:</strong> +503 7890 1234</p>
-        <p><strong>Dirección:</strong> San Salvador, El Salvador</p>
+        <p><strong>Dirección:</strong> Usulutan, El Salvador</p>
       </section>
 
       <footer className="footer">
