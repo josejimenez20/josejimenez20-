@@ -13,11 +13,11 @@ function Home() {
       </header>
 
       <section className="carousel-section">
-        <h2>Vehículos Populares</h2>
+        <h2>Vehículos populares en el Salvador</h2>
         <div className="carousel-wrapper">
           <div className="carousel-track">
             <img src="https://hips.hearstapps.com/hmg-prod/images/2024-nissan-sentra-129-6488757e6ae9a.jpg?" alt="Carro 1" />
-            <img src="https://cdn.motor1.com/images/mgl/g4zEQN/s3/pajero-sport-2025_legend-3.jpg" alt="Carro 2" />
+            <img src="https://www.autodato.com/wp-content/uploads/2013/08/kia-Soul-2014-USA-1.jpg.webp" alt="Carro 2" />
             <img src="https://img.asmedia.epimg.net/resizer/v2/EDIQD3KHXJBAPMTQVIVAYBFPOI.jpg?auth=e6ef1381d473c2a343219eb729eaafa14784e1eda2ea02d4855d8875440aab51&width=1200&height=675&smart=true" alt="Carro 3" />
           </div>
         </div>
@@ -32,7 +32,7 @@ function Home() {
       <section className="contacto-section">
         <h2>Contacto</h2>
         <p><strong>Email:</strong> jimenez@driftshop.com</p>
-        <p><strong>Teléfono:</strong> +503 7890 1234</p>
+        <p><strong>Teléfono:</strong> +503 7890 0000</p>
         <p><strong>Dirección:</strong> Usulutan, El Salvador</p>
       </section>
 
